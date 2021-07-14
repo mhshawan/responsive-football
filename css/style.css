@@ -458,6 +458,22 @@ footer{
 }
 
 
+@media only screen and (min-width: 350px){
+
+    .players{
+        padding: 60px;
+    }
+    .highlights-image img {
+        width: 350px;
+        height: 333px;
+    }
+
+    .extra-section-2{
+        margin-top: 370px;
+    }
+}
+
+
 
 
 
