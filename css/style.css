@@ -44,6 +44,7 @@ nav a{
     border: none;
 }
 
+
 .nav button i{
     color: #fff;
     margin-right: 8px;
@@ -70,6 +71,12 @@ nav a{
     color: #FFF;
     line-height: 80px;
     margin-bottom: 27px;
+    transition: transform 1s ease;
+}
+
+.banner-title h1:hover{
+    color: tomato;
+    transform: scale(0.5);
 }
 
 .banner-title button{
@@ -409,6 +416,7 @@ footer{
     
     .logo{
         grid-template-columns: 1fr;
+        
     }
 
     .extra-section2 {
