@@ -362,11 +362,6 @@ footer{
 
 
 
-
-
-
-
-
 @media only screen and (max-width: 688px){
     .container{
         width: 100%;
@@ -374,6 +369,10 @@ footer{
 
     header {
         height: 695px;
+    }
+
+    .nav{
+        display: none;
     }
 
     .banner {
