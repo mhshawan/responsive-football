@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -90,7 +90,7 @@ nav a{
 
 .banner-image img{
     width: 556px;
-    height:456px;;
+    height:456px;
 }
 
 
@@ -162,26 +162,26 @@ nav a{
   extra section 1
 -----------------*/
 
-.extra-section{
+/* .extra-section{
     margin-top: 120px;
-}
+} */
 
 .extra-section1{
     display: flex;
     margin-top: 120px;
     border-top: 3px solid red;
     box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
-    height: 430px;
+    height: 300px;
 }
 
 
 
 .extra-image{
-    margin-right: 100px;
+    margin-right: 50px;
 }
 
 .extra-image img{
-    height: 430px;
+    height: 300px;
     transition: 2s;
 }
 
@@ -267,7 +267,8 @@ footer{
    media query 
 --------------*/
 
-@media only screen and (max-width: 992px){
+
+@media only screen and (min-width: 689px) and (max-width: 1030px){
     .container{
         width: 100%;
     }
@@ -285,8 +286,6 @@ footer{
     .nav a{
         margin-right: 20px;
     }
-
-
     
     .banner {
         display: flex;
@@ -331,18 +330,19 @@ footer{
         width: 350px;
         height: 300px;
     }
-
-    .extra-section {
-    margin-top: 200px;
-}
     
     .extra-section1 {
         display: flex;
         flex-direction: column;
     }
     
+    .extra-image {
+        margin-right: 50px;
+        margin: 0 auto;
+    }
+    
     .extra-image img {
-        width: 684px;
+        width: 100%;
     }
     
     .extra-title {
@@ -352,16 +352,118 @@ footer{
     .extra-section2 {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 20px;
+        padding: 200px;
     }
     
     footer {
         margin-top: 20px;
     }
-}
+} 
 
-/* @media only screen and (max-width: 685px){
+
+
+
+
+
+
+
+@media only screen and (max-width: 688px){
     .container{
         width: 100%;
     }
-} */
+
+    header {
+        height: 695px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .banner-title {
+        margin-right: 100px;
+        margin-bottom: 50px;
+    }
+
+    .banner-title h1 {
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 27px;
+    }
+
+    .banner-image img {
+        width: 320px;
+        height: 259px;
+    }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 130px;
+        margin-top: 5px;
+    }
+    
+    .highlights {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    .highlights-title {
+        margin-bottom: 29px;
+        margin-right: 0;
+    }
+    
+    .highlights-title h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .highlights-title p{
+         line-height: 28px;
+    }
+
+    .highlights-image img {
+        width: 530px;
+        height: 333px;
+    }
+    
+    .extra-section1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 90px;
+        margin-bottom: 80px;
+    }
+    
+    .extra-image {
+        margin-right: 50px;
+        margin: 0 auto;
+    }
+    
+    .extra-image img {
+        width: 100%;
+    }
+
+    .extra-section2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 27px;
+        padding: 70px;
+        margin-top: 250px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
+    .footer-logo img {
+        width: 88%;
+    }
+}
+
+
+
+
+
+
